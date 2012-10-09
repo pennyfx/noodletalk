@@ -47,9 +47,6 @@ define(['jquery'],
     if (!hushLock) {
       hushLock = 1;
 
-      // Disable messaging.
-      $('input[name=message]').attr('disabled','disabled');
-
       // Disable scrolling.
       disableScroll();
 

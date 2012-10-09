@@ -85,11 +85,9 @@ define(['jquery', 'commands', 'time-format', 'version-timeout'],
 
         var mediaItem = $('<li class="font' + data.font + '" data-created="' + data.created +'"></li>');
 
-        if (mediaColumn.find('li[data-created="' + data.created + '"').length === 0) {
-          mediaColumn.prepend(mediaItem.html(message + '<a href="#" class="delete">x</a>'));
-          if (mediaColumn.find('li').length > mediaLimit) {
-            mediaColumn.find('li:last-child').remove();
-          }
+        mediaColumn.prepend(mediaItem.html(message + '<a href="#" class="delete">x</a>'));
+        if (mediaColumn.find('li').length > mediaLimit) {
+          mediaColumn.find('li:last-child').remove();
         }
       }
     },

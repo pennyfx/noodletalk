@@ -32,7 +32,7 @@ define(['jquery', 'commands', 'messages', 'users'],
     users.setUserList(data);
   });
 
-  $('#login').click(function(ev) {
+  login.click(function(ev) {
     ev.preventDefault();
     navigator.id.request();
   });

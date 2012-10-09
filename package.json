@@ -16,8 +16,7 @@
     "socket.io": "git://github.com/LearnBoost/socket.io.git",
     "hiredis": "0.1.14",
     "redis": "0.7.2",
-    "nconf": "git://github.com/flatiron/nconf.git",
-    "rss": "*"
+    "nconf": "git://github.com/flatiron/nconf.git"
   },
   "devDependencies": {
     "mocha": "1.2.2",
